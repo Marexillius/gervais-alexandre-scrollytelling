@@ -1,0 +1,50 @@
+:root {
+    --blanc: #ffffff;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.chapter {
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ff0000;
+}
+
+.chapter-1 {
+    background-image: url("../img/img_arriere_plan/00_maison_vide.jpg");
+}
+
+.chapter-2 {
+    background-image: url("../img/img_arriere_plan/01_espace.jpg");
+}
+
+.chapter-3 {
+    background-image: url("../img/img_arriere_plan/02_jungle.jpg");
+}
+
+.chapter-4 {
+    background-image: url("../img/img_arriere_plan/03_hanter.jpg");
+}
+
+.chapter-5 {
+    background-image: url("../img/img_arriere_plan/04_volcan.jpg");
+}
+
+.chapter-6 {
+    background-image: url("../img/img_arriere_plan/05_maison_pleine.jpg");
+}
