@@ -20,34 +20,34 @@
 
 * {
     margin: 0;
+    box-sizing: content-box;
 }
 
 body {
     overflow-x: hidden;
     font-family: "GillSans";
+    color: var(--blanc);
 }
 
 header {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("../img/img_arriere_plan/00_intro.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
-main {
-    width: 100vw;
+section {
+    border: 1px solid red;
+    width: auto;
     height: 100vh;
+    background-size: cover;
 }
 
 .chapter {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     border: 1px solid #ff0000;
 }
 
@@ -77,4 +77,17 @@ main {
 
 h1 {
     font-family: "OpenSans";
+    font-size: 3vw;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5vw;
+    margin-top: 0.5vh;
+}
+
+.headerCTA {
+    width: 4.5vw;
+    margin-top: 69vh;
 }
