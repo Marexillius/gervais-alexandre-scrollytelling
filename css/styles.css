@@ -25,6 +25,7 @@
 * {
     margin: 0;
     box-sizing: content-box;
+    padding: 0;
 }
 
 body {
@@ -36,13 +37,12 @@ body {
 h1 {
     font-family: "OpenSans";
     font-size: 3vw;
-    margin-top: 1vh;
+    top: 2%;
     text-align: center;
 }
 
 p {
     font-size: 1.5vw;
-    margin-top: 0.5vh;
 }
 
 /*---------------------------------------------------------- 
@@ -52,23 +52,41 @@ p {
 header {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
     background-image: url("../img/img_arriere_plan/00_intro.jpg");
     background-size: cover;
     background-position: center;
 }
 
+.headerDescription {
+    text-align: center;
+}
+
 .headerCTA {
-    width: 5vw;
-    margin-top: 68vh;
+    position: absolute;
+    width: 8vw;
+    bottom: 10%;
+    left: 47.5vw;
 }
 
 .headerCopyright {
     font-size: 10px;
-    align-self: flex-start;
-    justify-self: end;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+}
+
+/*---------------------------------------------------------- 
+# Styles Footer
+----------------------------------------------------------*/ 
+
+footer {
+    background-color: var(--bleu);
+    position: relative;
+}
+
+.footerText {
+    top: 2%;
 }
 
 /*---------------------------------------------------------- 
@@ -77,14 +95,16 @@ header {
 
 section {
     border: 1px solid red;
-    width: auto;
-    height: 110vh;
+    width: 100vw;
+    height: 105vh;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .chapter {
     border: 1px solid #ff0000;
+    object-fit: contain;
 }
 
 /*---------------------------------------------------------- 
@@ -101,7 +121,7 @@ section {
 
 .chapter-2 {
     background-image: url("../img/img_arriere_plan/02_espace.jpg");
-    height: 440vh;
+    height: 420vh;
 }
 
 /*---------------------------------------------------------- 
