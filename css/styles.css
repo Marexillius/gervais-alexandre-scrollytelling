@@ -24,7 +24,7 @@
 
 * {
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 0;
 }
 
@@ -154,4 +154,29 @@ section {
 
 .chapter-6 {
     background-image: url("../img/img_arriere_plan/06_maison_pleine.jpg");
+}
+
+/*---------------------------------------------------------- 
+# Spritesheets
+----------------------------------------------------------*/ 
+
+.spritesheetBG {
+    height: 1000vh;
+    background-color: var(--bleu);
+}
+
+.spritesheet-01 {
+    background-image: url("../img/img_elements_visuels/00_portail_maison_vide.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.spritesheet-02 {
+    background-image: url("../img/img_elements_visuels/05_portail_porte.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
