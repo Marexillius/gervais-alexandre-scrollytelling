@@ -18,6 +18,10 @@
     --jaune: #eaeb25;
 }
 
+/*---------------------------------------------------------- 
+# Styles Généraux
+----------------------------------------------------------*/ 
+
 * {
     margin: 0;
     box-sizing: content-box;
@@ -27,52 +31,6 @@ body {
     overflow-x: hidden;
     font-family: "GillSans";
     color: var(--blanc);
-}
-
-header {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("../img/img_arriere_plan/00_intro.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-section {
-    border: 1px solid red;
-    width: auto;
-    height: 100vh;
-    background-size: cover;
-}
-
-.chapter {
-    border: 1px solid #ff0000;
-}
-
-.chapter-1 {
-    background-image: url("../img/img_arriere_plan/01_maison_vide.jpg");
-}
-
-.chapter-2 {
-    background-image: url("../img/img_arriere_plan/02_espace.jpg");
-}
-
-.chapter-3 {
-    background-image: url("../img/img_arriere_plan/03_jungle.jpg");
-}
-
-.chapter-4 {
-    background-image: url("../img/img_arriere_plan/04_hanter.jpg");
-}
-
-.chapter-5 {
-    background-image: url("../img/img_arriere_plan/05_volcan.jpg");
-}
-
-.chapter-6 {
-    background-image: url("../img/img_arriere_plan/06_maison_pleine.jpg");
 }
 
 h1 {
@@ -87,7 +45,93 @@ p {
     margin-top: 0.5vh;
 }
 
+/*---------------------------------------------------------- 
+# Styles Header
+----------------------------------------------------------*/ 
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/img_arriere_plan/00_intro.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .headerCTA {
-    width: 4.5vw;
-    margin-top: 69vh;
+    width: 5vw;
+    margin-top: 68vh;
+}
+
+.headerCopyright {
+    font-size: 10px;
+    align-self: flex-start;
+    justify-self: end;
+}
+
+/*---------------------------------------------------------- 
+# Styles commun des chapitres
+----------------------------------------------------------*/ 
+
+section {
+    border: 1px solid red;
+    width: auto;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.chapter {
+    border: 1px solid #ff0000;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/ 
+
+.chapter-1 {
+    background-image: url("../img/img_arriere_plan/01_maison_vide.jpg");
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 2
+----------------------------------------------------------*/ 
+
+.chapter-2 {
+    background-image: url("../img/img_arriere_plan/02_espace.jpg");
+    height: 440vh;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 3
+----------------------------------------------------------*/ 
+
+.chapter-3 {
+    background-image: url("../img/img_arriere_plan/03_jungle.jpg");
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/ 
+
+.chapter-4 {
+    background-image: url("../img/img_arriere_plan/04_hanter.jpg");
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/ 
+
+.chapter-5 {
+    background-image: url("../img/img_arriere_plan/05_volcan.jpg");
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/ 
+
+.chapter-6 {
+    background-image: url("../img/img_arriere_plan/06_maison_pleine.jpg");
 }
