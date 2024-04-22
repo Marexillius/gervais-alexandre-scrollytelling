@@ -19,8 +19,9 @@
         <!------------ Chapitre 1 ------------>
         <section class="chapter chapter-1" id="chapter-1">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Déplacement de position</li> 
+                <li>Rotation</li>
+                <li>Spritesheet</li> 
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=</li> 
@@ -29,14 +30,16 @@
                 </li> 
             </ul>
             <img src="./img/img-personnage/perso-ace.png" alt="perso" class="persoDefaut item">
-            <div class="ss-chapter-01 spritesheet portal item"></div>
+            <div class="item ss-01 spritesheet portal"></div>
         </section>
 
         <!------------ Chapitre 2 ------------>
         <section class="chapter chapter-2" id="chapter-2">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Spritesheet</li> 
+                <li>Déplacement de position</li>
+                <li>Paralax</li>
+                <li>Couches</li> 
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=</li> 
@@ -44,21 +47,22 @@
                     </ul> 
                 </li> 
             </ul>
-            <div class="ss-chapter-02 spritesheet portal item"></div>
+            <div class="item ss-02 spritesheet portal"></div>
             <img src="./img/img-personnage/perso-ace-tombe.png" alt="perso tombe" class="persoTombe item">
             <img src="img/img-elements-visuels/chapitre_02/calendrier.png" alt="calendrier" class="item calendrier">
             <img src="img/img-elements-visuels/chapitre_02/horloge-couche-3.png" alt="horloge couche 3" class="item paralax-3">
             <img src="img/img-elements-visuels/chapitre_02/horloge-couche-2.png" alt="horloge couche 2" class="item paralax-2">
             <img src="img/img-elements-visuels/chapitre_02/horloge-couche-1.png" alt="horloge couche 1" class="item paralax-1">
             <img src="img/img-elements-visuels/chapitre_02/horloge-couche-0.png" alt="horloge couche 0" class="item paralax-0">
-            <div class="ss-chapter-03 spritesheet portal item"></div>
+            <div class="item ss-03 spritesheet portal"></div>
         </section>
 
         <!------------ Chapitre 3 ------------>
         <section class="chapter chapter-3" id="chapter-3">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Spritesheet</li>
+                <li>Déplacement de position</li> 
+                <li>Morphing</li> 
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=</li> 
@@ -66,17 +70,47 @@
                     </ul> 
                 </li> 
             </ul>
-            <img src="img/img-elements-visuels/chapitre_03/banan.svg" alt="banan" class="item lettres lettre-banan">
-            <img src="img/img-elements-visuels/chapitre_03/a.svg" alt="a" class="item lettres lettre-a">
-            <img src="img/img-elements-visuels/chapitre_03/e.svg" alt="e"  class="item lettres lettre-e">
+            <div class="item ss-04 spritesheet portal"></div>
+            <!------------ Lettres SVG ------------>
+            <svg class="item lettres lettre-banan" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
+                <style>
+                    tspan { white-space:pre } 
+                    .t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+                </style>
+                <text id="BANAN" style="transform: matrix(1,0,0,1,-20,179)" >
+                    <tspan x="0" y="0" class="t0">B</tspan><tspan  y="0" class="t0">A</tspan><tspan  y="0" class="t0">N</tspan><tspan  y="0" class="t0">A</tspan><tspan  y="0" class="t0">N</tspan><tspan  y="0" class="t0">
+            </tspan>
+                </text>
+            </svg>
+            <svg class="item lettres lettre-a" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
+                <style>
+                    tspan { white-space:pre } 
+                    .t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+                </style>
+                <text id="A" style="transform: matrix(1,0,0,1,328,179)" >
+                    <tspan x="0" y="0" class="t0">A
+            </tspan>
+                </text>
+            </svg>
+            <svg class="item lettres lettre-e" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
+                <style>
+                    tspan { white-space:pre } 
+                    .t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+                </style>
+                <text id="E" style="transform: matrix(1,0,0,1,324,179)" >
+                    <tspan x="0" y="0" class="t0">E
+            </tspan>
+                </text>
+            </svg>
             <div class="persoChange item"></div>
         </section>
 
         <!------------ Chapitre 4 ------------>
         <section class="chapter chapter-4" id="chapter-4">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Déplacement de position</li>
+                <li>Rotation</li> 
+                <li>Fondu enchaîné</li> 
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=</li> 
@@ -91,8 +125,9 @@
         <!------------ Chapitre 5 ------------>
         <section class="chapter chapter-5" id="chapter-5">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Déplacement de position</li>
+                <li>Rotation</li> 
+                <li>Spritesheet</li> 
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=</li> 
@@ -100,7 +135,7 @@
                     </ul> 
                 </li> 
             </ul>
-            <div class="ss-chapter-04 spritesheet portal item"></div>
+            <div class="item ss-05 spritesheet portal"></div>
             <img src="img/img-arriere-plan/05-volcan_over.png" alt="overlay">
             <img src="img/img-personnage/perso-ace.png" alt="perso" class="item persoVolcan">
             <img src="img/img-elements-visuels/chapitre_05/line.svg" alt="nuage trace" class="item trace">
@@ -109,8 +144,9 @@
         <!------------ Chapitre 6 ------------>
         <section class="chapter chapter-6" id="chapter-6">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Spritesheet</li> 
+                <li>Texte</li>
+                <li>Fondu enchaîné</li>
                 <li>scrollTrigger 
                     <ul> 
                         <li>trigger=</li> 
@@ -119,7 +155,7 @@
                 </li> 
             </ul>
             <img src="img/img-elements-visuels/chapitre_04/fantome.png" alt="fantome" class="item ghost-end">
-            <div class="ss-chapter-06 spritesheet portal item"></div>
+            <div class="item ss-06 spritesheet"></div>
         </section>
     </main>
     <footer>
