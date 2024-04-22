@@ -7,8 +7,6 @@ timeline.to(arrow, { y: "2vh", duration: 0.5 });
 timeline.to(arrow, { y: 0, duration: 1, ease: "none" });
 
 //Spritesheet
-const spritesheetContainer = document.querySelector('.spritesheetBG');
-
 window.addEventListener('scroll', () => {
     body.classList.add('is-scrolling');
     setTimeout(noScrollingBody, 100);

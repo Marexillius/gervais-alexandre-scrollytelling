@@ -201,25 +201,25 @@ section {
 }
 
 .ss-chapter-01 {
-    background-image: url("../img/img-elements-visuels/00-portail-maison-vide.png");
+    background-image: url("../img/img-elements-visuels/chapitre_01/01-portail-espace.png");
 }
 
 .ss-chapter-02 {
-    background-image: url("../img/img-elements-visuels/01-portail-espace.png");
+    background-image: url("../img/img-elements-visuels/chapitre_02/02-portail-maison-vide.png");
     transform: rotate(-90deg);
 }
 
 .ss-chapter-03 {
-    background-image: url("../img/img-elements-visuels/02-portail-jungle.png");
+    background-image: url("../img/img-elements-visuels/chapitre_02/03-portail-jungle.png");
     transform: rotate(90deg);
 }
 
 .ss-chapter-04 {
-    background-image: url("../img/img-elements-visuels/03-portail-hanter.png");
+    background-image: url("../img/img-elements-visuels/chapitre_05/04-portail-hanter.png");
 }
 
 .ss-chapter-06 {
-    background-image: url("../img/img-elements-visuels/05-portail-porte.png");
+    background-image: url("../img/img-elements-visuels/chapitre_06/05-portail-porte.png");
     animation-play-state: paused;
     aspect-ratio: 511 / 791;
     height: 30vw;
