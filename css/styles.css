@@ -66,7 +66,7 @@ header {
     position: absolute;
     width: 8vw;
     bottom: 10%;
-    left: 47.5vw;
+    left: 46vw;
 }
 
 .headerCopyright {
@@ -100,11 +100,17 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 .chapter {
     border: 1px solid #ff0000;
-    object-fit: contain;
+}
+
+.item {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*---------------------------------------------------------- 
@@ -183,16 +189,33 @@ section {
     background-color: var(--bleu);
 }
 
-.ss-chapter-01 {
-    background-image: url("../img/img-elements-visuels/00-portail-maison-vide.png");
+.portal {
+    animation-name: portal;
     animation-play-state: paused;
-    width: 30vw;
+    aspect-ratio: 1 / 1;
     height: 30vw;
     background-size: 500% 100%;
-    animation-name: portal;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(5);
+}
+
+.ss-chapter-01 {
+    background-image: url("../img/img-elements-visuels/00-portail-maison-vide.png");
+}
+
+.ss-chapter-02 {
+    background-image: url("../img/img-elements-visuels/01-portail-espace.png");
+    transform: rotate(-90deg);
+}
+
+.ss-chapter-03 {
+    background-image: url("../img/img-elements-visuels/02-portail-jungle.png");
+    transform: rotate(90deg);
+}
+
+.ss-chapter-04 {
+    background-image: url("../img/img-elements-visuels/03-portail-hanter.png");
 }
 
 .ss-chapter-06 {
@@ -207,6 +230,6 @@ section {
     animation-timing-function: steps(8);
 }
 
-.is-scrolling .ss-chapter-01, .is-scrolling .ss-chapter-06 {
+.is-scrolling .ss-chapter-01, .is-scrolling .ss-chapter-02, .is-scrolling .ss-chapter-03, .is-scrolling .ss-chapter-04, .is-scrolling .ss-chapter-06 {
     animation-play-state: running;
 }
