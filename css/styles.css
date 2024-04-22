@@ -233,3 +233,28 @@ section {
 .is-scrolling .ss-chapter-01, .is-scrolling .ss-chapter-02, .is-scrolling .ss-chapter-03, .is-scrolling .ss-chapter-04, .is-scrolling .ss-chapter-06 {
     animation-play-state: running;
 }
+
+/*---------------------------------------------------------- 
+# Identification d'animations
+----------------------------------------------------------*/ 
+
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
