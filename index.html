@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,29 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Voyage Unique - Scrollytelling</title>
 </head>
+
 <body>
     <header>
         <h1 class="headerTitre">Une histoire de Scrollytelling</h1>
         <p class="headerDescription">Une aventure récapitulative d'Alexandre Gervais</p>
-        <p class="headerCopyright">Projet scrollytelling créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.© 2024 - Conception : Alexandre Gervais | Développement Web : Alexandre Gervais.</p>
-        <img src="./img/img-elements-visuels/call-to-action.png" alt="callToAction" class="headerCTA"> 
+        <p class="headerCopyright">Projet scrollytelling créé dans le cadre du cours Optimisation Web - Intégration
+            multimédia - Collège Montmorency.© 2024 - Conception : Alexandre Gervais | Développement Web : Alexandre
+            Gervais.</p>
+        <img src="./img/img-elements-visuels/call-to-action.png" alt="callToAction" class="headerCTA">
     </header>
     <main>
         <!------------ Chapitre 1 ------------>
         <section class="chapter chapter-1" id="chapter-1">
-            <ul class="technique-gsap"> 
-                <li>Déplacement de position</li> 
+            <ul class="technique-gsap">
+                <li>Déplacement de position</li>
                 <li>Rotation</li>
-                <li>Spritesheet</li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                <li>Spritesheet</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=</li>
+                        <li>...</li>
+                    </ul>
+                </li>
             </ul>
             <img src="./img/img-personnage/perso-ace.png" alt="perso" class="persoDefaut item">
             <div class="item ss-01 spritesheet portal"></div>
@@ -35,71 +39,105 @@
 
         <!------------ Chapitre 2 ------------>
         <section class="chapter chapter-2" id="chapter-2">
-            <ul class="technique-gsap"> 
-                <li>Spritesheet</li> 
+            <ul class="technique-gsap">
+                <li>Spritesheet</li>
                 <li>Déplacement de position</li>
                 <li>Paralax</li>
-                <li>Couches</li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                <li>Couches</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=</li>
+                        <li>...</li>
+                    </ul>
+                </li>
             </ul>
             <div class="item ss-02 spritesheet portal"></div>
             <img src="./img/img-personnage/perso-ace-tombe.png" alt="perso tombe" class="persoTombe item">
             <img src="img/img-elements-visuels/chapitre_02/calendrier.png" alt="calendrier" class="item calendrier">
-            <img src="img/img-elements-visuels/chapitre_02/horloge-couche-3.png" alt="horloge couche 3" class="item paralax-3">
-            <img src="img/img-elements-visuels/chapitre_02/horloge-couche-2.png" alt="horloge couche 2" class="item paralax-2">
-            <img src="img/img-elements-visuels/chapitre_02/horloge-couche-1.png" alt="horloge couche 1" class="item paralax-1">
-            <img src="img/img-elements-visuels/chapitre_02/horloge-couche-0.png" alt="horloge couche 0" class="item paralax-0">
+            <div class="horloge-container">
+                <img src="img/img-elements-visuels/chapitre_02/horloge-couche-0.png" alt="horloge couche 0" class="item paralax-0 horlorge-paralax">
+                <img src="img/img-elements-visuels/chapitre_02/horloge-couche-1.png" alt="horloge couche 1" class="item paralax-1 horlorge-paralax">
+                <img src="img/img-elements-visuels/chapitre_02/horloge-couche-2.png" alt="horloge couche 2" class="item paralax-2 horlorge-paralax">
+                <img src="img/img-elements-visuels/chapitre_02/horloge-couche-3.png" alt="horloge couche 3" class="item paralax-3 horlorge-paralax">
+            </div>
             <div class="item ss-03 spritesheet portal"></div>
         </section>
 
         <!------------ Chapitre 3 ------------>
         <section class="chapter chapter-3" id="chapter-3">
-            <ul class="technique-gsap"> 
+            <ul class="technique-gsap">
                 <li>Spritesheet</li>
-                <li>Déplacement de position</li> 
-                <li>Morphing</li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                <li>Déplacement de position</li>
+                <li>Morphing</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=</li>
+                        <li>...</li>
+                    </ul>
+                </li>
             </ul>
             <div class="item ss-04 spritesheet portal"></div>
             <!------------ Lettres SVG ------------>
-            <svg class="item lettres lettre-banan" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
+            <svg class="item lettres lettre-banan" version="1.2" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 822 179" width="822" height="179">
                 <style>
-                    tspan { white-space:pre } 
-                    .t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+                    tspan {
+                        white-space: pre
+                    }
+
+                    .t0 {
+                        font-size: 250px;
+                        fill: #fbf83f;
+                        font-weight: 400;
+                        font-family: "MicrosoftSansSerif", "Microsoft Sans Serif"
+                    }
                 </style>
-                <text id="BANAN" style="transform: matrix(1,0,0,1,-20,179)" >
-                    <tspan x="0" y="0" class="t0">B</tspan><tspan  y="0" class="t0">A</tspan><tspan  y="0" class="t0">N</tspan><tspan  y="0" class="t0">A</tspan><tspan  y="0" class="t0">N</tspan><tspan  y="0" class="t0">
-            </tspan>
+                <text id="BANAN" style="transform: matrix(1,0,0,1,-20,179)">
+                    <tspan x="0" y="0" class="t0">B</tspan>
+                    <tspan y="0" class="t0">A</tspan>
+                    <tspan y="0" class="t0">N</tspan>
+                    <tspan y="0" class="t0">A</tspan>
+                    <tspan y="0" class="t0">N</tspan>
+                    <tspan y="0" class="t0">
+                    </tspan>
                 </text>
             </svg>
-            <svg class="item lettres lettre-a" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
+            <svg class="item lettres lettre-a" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179"
+                width="822" height="179">
                 <style>
-                    tspan { white-space:pre } 
-                    .t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+                    tspan {
+                        white-space: pre
+                    }
+
+                    .t0 {
+                        font-size: 250px;
+                        fill: #fbf83f;
+                        font-weight: 400;
+                        font-family: "MicrosoftSansSerif", "Microsoft Sans Serif"
+                    }
                 </style>
-                <text id="A" style="transform: matrix(1,0,0,1,328,179)" >
+                <text id="A" style="transform: matrix(1,0,0,1,328,179)">
                     <tspan x="0" y="0" class="t0">A
-            </tspan>
+                    </tspan>
                 </text>
             </svg>
-            <svg class="item lettres lettre-e" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
+            <svg class="item lettres lettre-e" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179"
+                width="822" height="179">
                 <style>
-                    tspan { white-space:pre } 
-                    .t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+                    tspan {
+                        white-space: pre
+                    }
+
+                    .t0 {
+                        font-size: 250px;
+                        fill: #fbf83f;
+                        font-weight: 400;
+                        font-family: "MicrosoftSansSerif", "Microsoft Sans Serif"
+                    }
                 </style>
-                <text id="E" style="transform: matrix(1,0,0,1,324,179)" >
+                <text id="E" style="transform: matrix(1,0,0,1,324,179)">
                     <tspan x="0" y="0" class="t0">E
-            </tspan>
+                    </tspan>
                 </text>
             </svg>
             <div class="persoChange item"></div>
@@ -107,16 +145,16 @@
 
         <!------------ Chapitre 4 ------------>
         <section class="chapter chapter-4" id="chapter-4">
-            <ul class="technique-gsap"> 
+            <ul class="technique-gsap">
                 <li>Déplacement de position</li>
-                <li>Rotation</li> 
-                <li>Fondu enchaîné</li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                <li>Rotation</li>
+                <li>Fondu enchaîné</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=</li>
+                        <li>...</li>
+                    </ul>
+                </li>
             </ul>
             <img src="img/img-personnage/perso-ace-peur.png" alt="perso peur" class="item persoPeur">
             <img src="img/img-elements-visuels/chapitre_04/fantome.png" alt="fantome" class="item ghost">
@@ -124,16 +162,16 @@
 
         <!------------ Chapitre 5 ------------>
         <section class="chapter chapter-5" id="chapter-5">
-            <ul class="technique-gsap"> 
+            <ul class="technique-gsap">
                 <li>Déplacement de position</li>
-                <li>Rotation</li> 
-                <li>Spritesheet</li> 
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                <li>Rotation</li>
+                <li>Spritesheet</li>
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=</li>
+                        <li>...</li>
+                    </ul>
+                </li>
             </ul>
             <div class="item ss-05 spritesheet portal"></div>
             <img src="img/img-arriere-plan/05-volcan_over.png" alt="overlay">
@@ -143,27 +181,30 @@
 
         <!------------ Chapitre 6 ------------>
         <section class="chapter chapter-6" id="chapter-6">
-            <ul class="technique-gsap"> 
-                <li>Spritesheet</li> 
+            <ul class="technique-gsap">
+                <li>Spritesheet</li>
                 <li>Texte</li>
                 <li>Fondu enchaîné</li>
-                <li>scrollTrigger 
-                    <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                <li>scrollTrigger
+                    <ul>
+                        <li>trigger=</li>
+                        <li>...</li>
+                    </ul>
+                </li>
             </ul>
             <img src="img/img-elements-visuels/chapitre_04/fantome.png" alt="fantome" class="item ghost-end">
             <div class="item ss-06 spritesheet"></div>
         </section>
     </main>
     <footer>
-        <p class="footerText">Projet Scrollytelling créé dans le cadre du cours Optimisation Web - Intégration Multimédia - Collège Montmorency.© 2024 - Conception : Alexandre Gervais | Développement Web : Alexandre Gervais.</p>
+        <p class="footerText">Projet Scrollytelling créé dans le cadre du cours Optimisation Web - Intégration
+            Multimédia - Collège Montmorency.© 2024 - Conception : Alexandre Gervais | Développement Web : Alexandre
+            Gervais.</p>
         <p class="footerCredits">Source des images: Alexandre Gervais</p>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="./script/script.js"></script>
+
 </html>
