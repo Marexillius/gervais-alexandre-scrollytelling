@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
 
 // Call To Action
 const arrow = document.querySelector(".headerCTA");
@@ -10,6 +10,7 @@ timeline.to(arrow, { y: 0, duration: 1, ease: "none"});
 // ---------------Chapitre 1---------------
 const timelineCh1 = gsap.timeline({});
 timelineCh1.to(".persoDefaut", {right: "5vw", ease: "power1.out", duration: 5, rotate: 1080});
+timelineCh1.to(".st-ch1", {text: "Hmm? Qu'est-ce ceci?", ease: "power2.out", duration: 2}, "<");
 
 // ---------------Chapitre 2---------------
 const timelineCh2 = gsap.timeline({});
@@ -32,15 +33,17 @@ timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/per
 const timelineCh4 = gsap.timeline({});
 timelineCh4.to(".persoPeur", {left: "-20vw", duration: 10, ease: "none", rotate: -1440});
 timelineCh4.to(".ghost", {left: "-30vw", ease: "power1.out", top: "30vh", opacity: 0.8, duration: 13}, "-=5");
+timelineCh4.to(".st-ch4", {text: "Pourquoi ai-je des frissons?!", duration: 4, ease: "power1.out"}, "-=16");
 
 // ---------------Chapitre 5---------------
 const timelineCh5 = gsap.timeline({});
 timelineCh5.to(".persoVolcan", {ease: "power1.in", bottom: "13vh", right: "8vw"});
 timelineCh5.to(".persoVolcan", {ease: "none", bottom: "10vh", left: "80vw", rotate:"-20deg", duration: 0.1});
 timelineCh5.to(".persoVolcan", {ease: "none", bottom: "-5vh", left: "-20vw", rotate: "-1080deg", width: "6.5vw", duration: 2});
-timelineCh5.to(".overlay-volcan", {ease: "none", right: "-4vw", width: "110vw", duration: 2.6}, "-=2.6");
-timelineCh5.fromTo(".chapter-5", {backgroundSize: "110% 110%"}, {backgroundSize: "100% 100%", duration: 2.6}, "<")
-timelineCh5.to(".ss-05", {height: "10vw", right: "6vw", top: "8vh", duration: 2.6}, "<")
+timelineCh5.to(".overlay-volcan", {ease: "power1.inOut", right: "-4vw", width: "110vw", duration: 2.6}, "-=2.6");
+timelineCh5.fromTo(".chapter-5", {backgroundSize: "110% 110%"}, {backgroundSize: "100% 100%", ease: "power1.inOut", duration: 2.6}, "<");
+timelineCh5.to(".ss-05", {height: "10vw", right: "6vw", top: "8vh", ease: "power1.inOut", duration: 2.6}, "<");
+timelineCh5.to(".st-ch5", {text: "Quelle belle île!", duration: 2, ease: "power1.out"}, "-=2.6");
 
 // ---------------Chapitre 6---------------
 const timelineCh6 = gsap.timeline({});
