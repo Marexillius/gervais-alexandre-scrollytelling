@@ -236,19 +236,20 @@ section {
 .calendrier {
     width: 15vw;
     right: 5vw;
-    top: 30%;
+    bottom: 250vh;
 }
 
-.horlorge-paralax {
+.horloge-paralax {
     width: 15vw;
-    top: 30%;
+    bottom: 250vh;
     left: 5vw;
 }
 
 .persoTombe {
     width: 22vw;
     left: 42vw;
-    top: 20vh;
+    bottom: 360vh;
+    z-index: 1000;
 }
 
 /*---------------------------------------------------------- 
@@ -265,9 +266,17 @@ section {
     left: 35vw;
 }
 
+.persoJungle {
+    background-image: url("../img/img-personnage/perso-ace-cote-1.png");
+    width: 15vw;
+    aspect-ratio: 1045 / 899;
+    left: 45vw;
+    top: 25vh;
+}
+
 .lettres {
     width: 40vw;
-    top: 70%;
+    top: 70vh;
 }
 
 .lettre-banan {
@@ -275,7 +284,7 @@ section {
 }
 
 .lettre-a, .lettre-e {
-    right: 10vw;
+    left: 50vw;
 }
 
 /*---------------------------------------------------------- 
@@ -289,13 +298,14 @@ section {
 .persoPeur {
     width: 20vw;
     top: 60vh;
-    right: 0;
+    right: -20vw;
 }
 
 .ghost {
     width: 13vw;
-    right: 0;
+    right: -20vw;
     top: 20vh;
+    opacity: 0;
 }
 
 /*---------------------------------------------------------- 
@@ -309,19 +319,26 @@ section {
 .ss-05 {
     background-image: url("../img/img-elements-visuels/chapitre_05/04-portail-hanter.png");
     height: 20vw;
-    right: 0;
+    right: 0vw;
 }
 
 .persoVolcan {
     width: 10vw;
-    top: 15vh;
-    right: 8vw;
+    bottom: 60vh;
+    left: 82vw;
 }
 
 .trace {
     width: 20vw;
     top: 10vh;
     left: 10vw;
+}
+
+.overlay-volcan {
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 1000;
 }
 
 /*---------------------------------------------------------- 
@@ -352,6 +369,7 @@ section {
     top: 5vh;
     right: 20vw;
     z-index: 1000;
+    opacity: 0;
 }
 
 @media screen and (max-width: 1612px) {
