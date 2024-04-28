@@ -112,6 +112,7 @@ section {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
+    border: 1px solid #8623bc;
 }
 
 .subtitles {
