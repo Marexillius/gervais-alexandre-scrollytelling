@@ -1,5 +1,8 @@
 const body = document.querySelector('body');
-gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin, MorphSVGPlugin);
+
+MorphSVGPlugin.convertToPath(".lettre-a");
+MorphSVGPlugin.convertToPath(".lettre-e");
 
 // Call To Action
 const arrow = document.querySelector(".headerCTA");
@@ -27,6 +30,7 @@ const timelineCh3 = gsap.timeline({});
 timelineCh3.to(".persoJungle", {top: "53vh", left: "61vw", rotate: "35deg",});
 timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/perso-ace-cote-2.png')", rotate: "0deg", top: "65vh", duration: 0});
 timelineCh3.to(".persoJungle", {top: "20vh", left: "100vw", rotate: "40deg"}, "+=1");
+timelineCh3.to(".lettre-a", {morphSVG: ".lettre-e"});
 timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/perso-ace-cote-3.png')", duration: 0}, "<")
 
 // ---------------Chapitre 4---------------
