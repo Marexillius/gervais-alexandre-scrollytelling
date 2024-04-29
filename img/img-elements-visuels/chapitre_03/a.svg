@@ -1,11 +1,7 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
-	<title>New Project</title>
+	<title>a-svg</title>
 	<style>
-		tspan { white-space:pre } 
-		.t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+		.s0 { fill: #fbf83f } 
 	</style>
-	<text id="A" style="transform: matrix(1,0,0,1,328,179)" >
-		<tspan x="0" y="0" class="t0">A
-</tspan>
-	</text>
+	<path id="Layer 1" fill-rule="evenodd" class="s0" d="m468 179l-20-55h-76l-19 55h-25l69-179h25l73 179zm-89-73h62l-32-83z"/>
 </svg>

@@ -1,11 +1,7 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
-	<title>New Project</title>
+	<title>e-svg</title>
 	<style>
-		tspan { white-space:pre } 
-		.t0 { font-size: 250px;fill: #fbf83f;font-weight: 400;font-family: "MicrosoftSansSerif", "Microsoft Sans Serif" } 
+		.s0 { fill: #fbf83f } 
 	</style>
-	<text id="E" style="transform: matrix(1,0,0,1,324,179)" >
-		<tspan x="0" y="0" class="t0">E
-</tspan>
-	</text>
+	<path id="Shape 1" class="s0" d="m473 0v21h-106v55h99v21h-99v61h110v21h-133v-179z"/>
 </svg>
