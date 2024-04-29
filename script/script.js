@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin, MorphSVGPlugin);
+gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin, MorphSVGPlugin, DrawSVGPlugin);
 
 // Call To Action
 const arrow = document.querySelector(".headerCTA");
@@ -45,6 +45,7 @@ timelineCh5.to(".overlay-volcan", {ease: "power1.inOut", right: "-4vw", width: "
 timelineCh5.fromTo(".chapter-5", {backgroundSize: "110% 110%"}, {backgroundSize: "100% 100%", ease: "power1.inOut", duration: 2.6}, "<");
 timelineCh5.to(".ss-05", {height: "10vw", right: "6vw", top: "8vh", ease: "power1.inOut", duration: 2.6}, "<");
 timelineCh5.to(".st-ch5", {text: "Quelle belle île!", duration: 2, ease: "power1.out"}, "-=2.6");
+timelineCh5.fromTo(".lineATracer", {drawSVG: "0% 0%"}, {drawSVG: "0% 100%", duration: 2, ease: "power1.out"}, "-=2");
 
 // ---------------Chapitre 6---------------
 const timelineCh6 = gsap.timeline({});

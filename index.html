@@ -112,9 +112,9 @@
             </svg>
             <svg class="item lettres lettre-e" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822 179" width="822" height="179">
                 <style>
-                    .s0 { fill: #fbf83f } 
+                    .s1 { fill: #fbf83f } 
                 </style>
-                <path id="Shape 1" class="s0 path-e" d="m473 0v21h-106v55h99v21h-99v61h110v21h-133v-179z"/>
+                <path id="Shape 1" class="s1 path-e" d="m473 0v21h-106v55h99v21h-99v61h110v21h-133v-179z"/>
             </svg>
             <div class="persoChange item"></div>
         </section>
@@ -154,7 +154,12 @@
             <div class="item ss-05 spritesheet portal"></div>
             <img src="img/img-arriere-plan/05-volcan_over.png" alt="overlay" class="item overlay-volcan">
             <img src="img/img-personnage/perso-ace.png" alt="perso" class="item persoVolcan" id="persoVolcan">
-            <img src="img/img-elements-visuels/chapitre_05/line.svg" alt="nuage trace" class="item trace">
+            <svg class="item trace" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 439 225" width="439" height="225">
+                <style>
+                    .s2 { fill: none;stroke: #ffffff;stroke-miterlimit:100;stroke-width: 26 } 
+                </style>
+                <path id="Shape 1" class="s2 lineATracer" d="m60.9 210.1c0 0-61.2-25.8-45-61.5 28.5-63 61.5-18 79.1-86.6 46.9-106.9 113-3 113-3 0 0 74-96.4 109 6 69.4-88.9 99 21 99 21 0 0 29.6 113-18 113-47.6 0-323.6 12.6-323.6 12.6"/>
+            </svg>
         </section>
 
         <!------------ Chapitre 6 ------------>
@@ -188,6 +193,7 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 <script src="./script/script.js"></script>
 
 </html>
