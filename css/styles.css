@@ -243,12 +243,12 @@ section {
 .calendrier {
     width: 15vw;
     right: 5vw;
-    bottom: 250vh;
+    bottom: 370vh;
 }
 
 .horloge-paralax {
     width: 15vw;
-    bottom: 250vh;
+    bottom: 370vh;
     left: 5vw;
 }
 
@@ -314,7 +314,7 @@ section {
 
 .ghost {
     width: 13vw;
-    right: -20vw;
+    left: 120vw;
     top: 20vh;
     opacity: 0;
 }
