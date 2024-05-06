@@ -24,20 +24,20 @@ timelineCh1.to(".st-ch1", {text: "Hmm? Qu'est-ce ceci?", ease: "power2.out", dur
 /*---------------Chapitre 2---------------*/
 const timelineCh2 = gsap.timeline({
     scrollTrigger: {
+        scrub: true,
         markers: false,
         start: 'top 0',
         end: 'bottom 0',
         trigger: '.chapter-2',
-        toggleActions: 'play complete reverse reset',
     }
 });
 timelineCh2.to(".persoTombe", {bottom: "15vh", ease: "none", rotate: "-40deg", duration: 7});
-timelineCh2.to(".horloge-paralax", {bottom: "130vh", duration: 4, ease: "power1.in", rotate: "-20deg"}, "<");
-timelineCh2.to(".paralax-0", {bottom: "-50vh", ease: "none", rotate: "-40deg", duration: 2}, "-=3");
-timelineCh2.to(".paralax-1", {bottom: "-50vh", ease: "none", rotate: "-55deg", duration: 3}, "<");
-timelineCh2.to(".paralax-2", {bottom: "-50vh", ease: "none", rotate: "20deg", duration: 4}, "<");
-timelineCh2.to(".paralax-3", {bottom: "-50vh", ease: "none", rotate: "30deg", duration: 5}, "<");
-timelineCh2.to(".calendrier", {bottom: "-40vh", ease: "power1.in", duration: 7, rotate: "20deg"}, "-=9");
+timelineCh2.to(".horloge-paralax", {bottom: "130vh", duration: 4, ease: "none", rotate: "-20deg"}, "<");
+timelineCh2.to(".paralax-0", {bottom: "-40vh", ease: "none", rotate: "-40deg", duration: 2}, "-=3");
+timelineCh2.to(".paralax-1", {bottom: "-40vh", ease: "none", rotate: "-55deg", duration: 3}, "<");
+timelineCh2.to(".paralax-2", {bottom: "-40vh", ease: "none", rotate: "20deg", duration: 4}, "<");
+timelineCh2.to(".paralax-3", {bottom: "-40vh", ease: "none", rotate: "30deg", duration: 5}, "<");
+timelineCh2.to(".calendrier", {bottom: "-20vh", ease: "none", duration: 7, rotate: "20deg"}, "-=9");
 
 /*---------------Chapitre 3---------------*/
 const timelineCh3 = gsap.timeline({
@@ -51,7 +51,7 @@ const timelineCh3 = gsap.timeline({
     }
 });
 timelineCh3.to(".persoJungle", {top: "53vh", left: "61vw", rotate: "35deg",});
-timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/perso-ace-cote-2.webp')", rotate: "0deg", top: "65vh", duration: 0});
+timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/perso-ace-cote-2.webp')", rotate: "0deg", top: "68vh", duration: 0});
 /*MorphSVG*/
 timelineCh3.to(".path-a", {/*morphSVG: ".path-e"*/}, "+=0.5");
 timelineCh3.to(".persoJungle", {top: "20vh", left: "100vw", rotate: "40deg"}, "-=0.45");
@@ -60,17 +60,17 @@ timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/per
 /*---------------Chapitre 4---------------*/
 const timelineCh4 = gsap.timeline({
     scrollTrigger: {
-        scrub: true,
         markers: false,
         start: 'top 0',
         end: 'bottom 0',
         trigger: '.chapter-4',
         pin: true,
+        toggleActions: 'play complete reverse reset',
     }
 });
-timelineCh4.to(".persoPeur", {left: "-20vw", duration: 10, ease: "none", rotate: -1440});
-timelineCh4.to(".ghost", {motionPath: {path:[{x:"120vw", y:"20vh"}, {x:"-80vw", y:"30vh"}]}, ease: "power1.out", opacity: 0.8, duration: 13}, "-=5");
-timelineCh4.to(".st-ch4", {text: "Pourquoi ai-je des frissons?!", duration: 4, ease: "power1.out"}, "-=16");
+timelineCh4.to(".persoPeur", {left: "-20vw", duration: 9, ease: "none", rotate: -1440});
+timelineCh4.to(".ghost", {motionPath: {path:[{x:"120vw", y:"20vh"}, {x:"-80vw", y:"30vh"}]}, ease: "power1.out", opacity: 0.8, duration: 13}, "-=9");
+timelineCh4.to(".st-ch4", {text: "Pourquoi ai-je des frissons?!", duration: 3.5, ease: "power1.out"}, "-=10");
 
 /*---------------Chapitre 5---------------*/
 const timelineCh5 = gsap.timeline({
@@ -105,6 +105,7 @@ const timelineCh6 = gsap.timeline({
     }
 });
 timelineCh6.to(".ghost-end", {top: "10vh", duration: 7, ease: "power1.out", opacity: 0.8, right: "25vw"});
+timelineCh6.to(".st-ch6", {text: "Fin.", duration: 15, ease: "power1.out"}, "<");
 
 /*Spritesheet*/
 window.addEventListener('scroll', () => {

@@ -74,6 +74,7 @@ header {
     position: absolute;
     bottom: 1%;
     left: 0;
+    padding-left: 1vw;
 }
 
 /*---------------------------------------------------------- 
@@ -84,6 +85,8 @@ footer {
     background-color: var(--bleu);
     position: relative;
     padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .footerText {
@@ -95,7 +98,6 @@ footer {
 ----------------------------------------------------------*/ 
 
 section {
-    border: 1px solid red;
     width: 100vw;
     height: 105vh;
     background-size: cover;
@@ -104,15 +106,10 @@ section {
     position: relative;
 }
 
-.chapter {
-    border: 1px solid #ff0000;
-}
-
 .item {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    /*border: 1px solid #8623bc;*/
 }
 
 .subtitles {
@@ -279,6 +276,7 @@ section {
     aspect-ratio: 1045 / 899;
     left: 45vw;
     top: 25vh;
+    z-index: 1000;
 }
 
 .lettres {
