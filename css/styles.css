@@ -53,7 +53,7 @@ header {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-image: url("../img/img-arriere-plan/00-intro.jpg");
+    background-image: url("../img/img-arriere-plan/00-intro.webp");
     background-size: cover;
     background-position: center;
 }
@@ -112,7 +112,7 @@ section {
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px solid #8623bc;
+    /*border: 1px solid #8623bc;*/
 }
 
 .subtitles {
@@ -169,7 +169,7 @@ section {
 ----------------------------------------------------------*/ 
 
 .chapter-1 {
-    background-image: url("../img/img-arriere-plan/01-maison-vide.jpg");
+    background-image: url("../img/img-arriere-plan/01-maison-vide.webp");
 }
 
 .persoDefaut {
@@ -178,7 +178,7 @@ section {
 }
 
 .ss-01 {
-    background-image: url("../img/img-elements-visuels/chapitre_01/01-portail-espace.png");
+    background-image: url("../img/img-elements-visuels/chapitre_01/01-portail-espace.webp");
     top: 25vh;
     right: -5vw;
 }
@@ -222,19 +222,19 @@ section {
 ----------------------------------------------------------*/ 
 
 .chapter-2 {
-    background-image: url("../img/img-arriere-plan/02-espace.jpg");
+    background-image: url("../img/img-arriere-plan/02-espace.webp");
     height: 420vh;
 }
 
 .ss-02 {
-    background-image: url("../img/img-elements-visuels/chapitre_02/02-portail-maison-vide.png");
+    background-image: url("../img/img-elements-visuels/chapitre_02/02-portail-maison-vide.webp");
     transform: rotate(-90deg);
     left: 35vw;
     top: -1%;
 }
 
 .ss-03 {
-    background-image: url("../img/img-elements-visuels/chapitre_02/03-portail-jungle.png");
+    background-image: url("../img/img-elements-visuels/chapitre_02/03-portail-jungle.webp");
     transform: rotate(90deg);
     left: 35vw;
     bottom: 0;
@@ -264,17 +264,17 @@ section {
 ----------------------------------------------------------*/ 
 
 .chapter-3 {
-    background-image: url("../img/img-arriere-plan/03-jungle.jpg");
+    background-image: url("../img/img-arriere-plan/03-jungle.webp");
 }
 
 .ss-04 {
-    background-image: url("../img/img-elements-visuels/chapitre_01/01-portail-espace.png");
+    background-image: url("../img/img-elements-visuels/chapitre_01/01-portail-espace.webp");
     transform: scaleX(-1) rotate(-45deg);
     left: 35vw;
 }
 
 .persoJungle {
-    background-image: url("../img/img-personnage/perso-ace-cote-1.png");
+    background-image: url("../img/img-personnage/perso-ace-cote-1.webp");
     width: 15vw;
     aspect-ratio: 1045 / 899;
     left: 45vw;
@@ -303,7 +303,7 @@ section {
 ----------------------------------------------------------*/ 
 
 .chapter-4 {
-    background-image: url("../img/img-arriere-plan/04-hanter.jpg");
+    background-image: url("../img/img-arriere-plan/04-hanter.webp");
 }
 
 .persoPeur {
@@ -324,11 +324,11 @@ section {
 ----------------------------------------------------------*/ 
 
 .chapter-5 {
-    background-image: url("../img/img-arriere-plan/05-volcan.jpg");
+    background-image: url("../img/img-arriere-plan/05-volcan.webp");
 }
 
 .ss-05 {
-    background-image: url("../img/img-elements-visuels/chapitre_05/04-portail-hanter.png");
+    background-image: url("../img/img-elements-visuels/chapitre_05/04-portail-hanter.webp");
     height: 20vw;
     right: 0vw;
 }
@@ -357,11 +357,11 @@ section {
 ----------------------------------------------------------*/ 
 
 .chapter-6 {
-    background-image: url("../img/img-arriere-plan/06-maison-pleine.jpg");
+    background-image: url("../img/img-arriere-plan/06-maison-pleine.webp");
 }
 
 .ss-06 {
-    background-image: url("../img/img-elements-visuels/chapitre_06/05-portail-porte.png");
+    background-image: url("../img/img-elements-visuels/chapitre_06/05-portail-porte.webp");
     animation-play-state: paused;
     aspect-ratio: 511 / 791;
     height: 30vw;
@@ -433,7 +433,8 @@ ul.technique-gsap{
     font-family: monospace;
     font-weight: 400;
     width: auto;
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
