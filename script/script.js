@@ -83,7 +83,7 @@ const timelineCh5 = gsap.timeline({
         pin: true,
     }
 });
-timelineCh5.to(".persoVolcan", {ease: "power1.in", bottom: "13vh", right: "8vw"});
+timelineCh5.to(".persoVolcan", {ease: "power1.in", bottom: "13vh", left: "85vw"});
 timelineCh5.to(".persoVolcan", {ease: "none", bottom: "10vh", left: "80vw", rotate:"-20deg", duration: 0.1});
 timelineCh5.to(".persoVolcan", {ease: "none", bottom: "-5vh", left: "-20vw", rotate: "-1080deg", width: "6.5vw", duration: 2});
 timelineCh5.to(".overlay-volcan", {ease: "power1.inOut", right: "-4vw", width: "110vw", duration: 2.6}, "-=2.6");
