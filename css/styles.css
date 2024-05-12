@@ -32,6 +32,7 @@ body {
     overflow-x: hidden;
     font-family: "GillSans";
     color: var(--blanc);
+    background-color: var(--bleu);
 }
 
 h1 {
