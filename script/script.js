@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin/*, MorphSVGPlugin, DrawSVGPlugin*/);
+gsap.registerPlugin(ScrollTrigger, TextPlugin, MotionPathPlugin, MorphSVGPlugin, DrawSVGPlugin);
 
 /*Call To Action*/
 const arrow = document.querySelector(".headerCTA");
@@ -53,7 +53,7 @@ const timelineCh3 = gsap.timeline({
 timelineCh3.to(".persoJungle", {top: "53vh", left: "61vw", rotate: "35deg",});
 timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/perso-ace-cote-2.webp')", rotate: "0deg", top: "68vh", duration: 0});
 /*MorphSVG*/
-timelineCh3.to(".path-a", {/*morphSVG: ".path-e"*/}, "+=0.5");
+timelineCh3.to(".path-a", {morphSVG: ".path-e"}, "+=0.5");
 timelineCh3.to(".persoJungle", {top: "20vh", left: "100vw", rotate: "40deg"}, "-=0.45");
 timelineCh3.to(".persoJungle", {backgroundImage: "url('../img/img-personnage/perso-ace-cote-3.webp')", duration: 0}, "<")
 
@@ -91,7 +91,7 @@ timelineCh5.fromTo(".chapter-5", {backgroundSize: "110% 110%"}, {backgroundSize:
 timelineCh5.to(".ss-05", {height: "10vw", right: "6vw", top: "8vh", ease: "power1.inOut", duration: 2.6}, "<");
 timelineCh5.to(".st-ch5", {text: "Quelle belle île!", duration: 2, ease: "power1.out"}, "-=2.6");
 /*DrawSVG*/
-/*const trace = gsap.timeline().fromTo(".lineATracer", {drawSVG: "0% 0%"}, {drawSVG: "0% 100%", duration: 2, ease: "power1.inOut", yoyo: true, repeat: -1});*/
+const trace = gsap.timeline().fromTo(".lineATracer", {drawSVG: "0% 0%"}, {drawSVG: "0% 100%", duration: 2, ease: "power1.inOut", yoyo: true, repeat: -1});
 
 /*---------------Chapitre 6---------------*/
 const timelineCh6 = gsap.timeline({
