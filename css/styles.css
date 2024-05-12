@@ -432,8 +432,8 @@ ul.technique-gsap{
     font-family: monospace;
     font-weight: 400;
     width: auto;
-    /*display: inline-block;*/
-    display: none;
+    display: inline-block;
+    /*display: none;*/
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
